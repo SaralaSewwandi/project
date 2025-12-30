@@ -2,11 +2,11 @@ FROM 	ubuntu:24.04
 
 RUN 	apt-get update && \
 	apt-get upgrade -y && \
-    apt install python3 && \
-    apt install python3-pip && \
-    apt install python3.12-venv && \
+    apt-get install python3 && \
+    apt-get install python3-pip && \
+    apt-get install python3.12-venv && \
     apt-get install git && \
-    git clone https://github.com/opencv/opencv_contrib.git && \
+    git clone https://github.com/SaralaSewwandi/project.git && \
     cd project && \
     # Set the working directory inside the container
     #WORKDIR /project
