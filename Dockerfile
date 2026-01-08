@@ -11,6 +11,7 @@ WORKDIR /project
 #RUN apt-get install -y python3 
 #RUN apt-get install -y python3-pip 
 RUN apt-get install -y python3.12-venv 
+RUN apt-get -y install curl
 RUN python3.12 -m venv env 
 #CMD source env/bin/activate 
 # Install the application dependencies
