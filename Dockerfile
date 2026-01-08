@@ -3,7 +3,7 @@ FROM 	ubuntu:24.04
 RUN apt update && apt install sudo -y 
 RUN apt-get update && apt-get install -y git
 #CMD ["git", "--version"]
-RUN cd /home/
+WORKDIR /home/
 RUN git clone https://github.com/SaralaSewwandi/project.git 
 #RUN cd project/ 
 # Set the working directory
