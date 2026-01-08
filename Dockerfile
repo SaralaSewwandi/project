@@ -8,6 +8,7 @@ RUN git clone https://github.com/SaralaSewwandi/project.git
 #RUN cd project/ 
 # Set the working directory
 WORKDIR /home/project  
+RUN PWD
 #RUN apt-get install -y python3 
 #RUN apt-get install -y python3-pip 
 RUN apt-get install -y python3.12-venv 
