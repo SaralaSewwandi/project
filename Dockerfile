@@ -3,11 +3,11 @@ FROM 	ubuntu:24.04
 RUN apt update && apt install sudo -y 
 RUN apt-get update && apt-get install -y git
 #CMD ["git", "--version"]
-RUN cd home/
+RUN cd /home/
 RUN git clone https://github.com/SaralaSewwandi/project.git 
-RUN cd project/ 
+#RUN cd project/ 
 # Set the working directory
-WORKDIR /project  
+WORKDIR /home/project  
 #RUN apt-get install -y python3 
 #RUN apt-get install -y python3-pip 
 RUN apt-get install -y python3.12-venv 
