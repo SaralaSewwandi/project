@@ -47,4 +47,5 @@ api.add_resource(Square, '/square/<int:num>')
 api.add_resource(TrainAccuracy, '/trainaccuracy')
 
 if __name__ == '__main__':
+    #Docker Environments: Binding to 0.0.0.0 is crucial when running a Flask app inside a Docker container, as it allows the app to be accessed from the host machine or other containers.
     app.run(host="0.0.0.0", port=5000,debug=True)
