@@ -17,7 +17,7 @@ RUN python3.12 -m venv env
 # Install the application dependencies
 RUN env/bin/pip3  install -r  requirements.txt
 # Expose the port Flask runs on (default 5000)
-EXPOSE 5000 
+#EXPOSE 5000 
 #CMD  source env/bin/activate 
 # Command to run the application when the container starts
 CMD ["env/bin/python3.12", "Convolutional_Neural_Network/restClient.py"]
